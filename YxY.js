@@ -9,4 +9,3 @@ export const YxY = {
   type: "RIZ-ausweg",
   total: 3
 };
-
