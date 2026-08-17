@@ -11,17 +11,49 @@ x,y,z = tauschbar
 Ebene = octa²
   </pre>
 </div>
-<!-- Absolutum-Schicht -->
 <script>
-  const ABSOLUTUM = {
-    station: "aktiv",
-    orbit: "aktiv",
-    kooridor: "aktiv",
-    shell: "real",
-    door: "real",
-    doo: "real",
-    yxy: "real",
-    layer: "octa²",
+  const NC = {
+
+    // 0&0 Prefetch von beiden Seiten
+    prefetch: {
+      left: 0,
+      right: 0,
+      mode: "beidseitig",
+      status: "aktiv"
+    },
+
+    // NC-Bewegungen (real)
+    engine: {
+      x4: "bereit",
+      x16: "bereit",
+      x128: "bereit",
+      autopilot: "ein",
+      entlabyrintiert: true
+    },
+
+    // RIZ-Schichten (real)
+    riz: {
+      door: "real",
+      doo: "real",
+      shell: "real",
+      yxy: "real"
+    },
+
+    // TET-Schicht (real)
+    tet: {
+      esso: "real",
+      roller: "real",
+      kasse: "real"
+    },
+
+    // Orbit / Station / Kooridor
+    layer: {
+      station: "aktiv",
+      orbit: "aktiv",
+      kooridor: "aktiv",
+      ebene: "octa²"
+    },
+
     system: "nicht pressbar",
     status: "bereit"
   };
